@@ -1,16 +1,16 @@
-import { FC, memo } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Landing from "../views/Landing/landing";
+import { type FC, memo } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Landing from '../views/Landing/landing'
 
 const Router: FC = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        {/* <Route path="/contacto" element={<Contacto />} /> */}
-      </Routes>
-    </BrowserRouter>
-  );
-};
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Landing />} />
+                {/* <Route path="/contacto" element={<Contacto />} /> */}
+            </Routes>
+        </BrowserRouter>
+  )
+}
 
-export default memo(Router);
+export default memo(Router)

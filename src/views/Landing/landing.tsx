@@ -1,10 +1,7 @@
-import { FC, memo } from "react";
-
+import { type FC, memo } from 'react'
 
 const Landing: FC = () => {
-  return (
-    <div>GROWTHBOOSTER</div>
-  );
-};
+  return <div>GROWTHBOOSTER</div>
+}
 
-export default memo(Landing);
+export default memo(Landing)
