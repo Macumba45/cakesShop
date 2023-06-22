@@ -4,12 +4,12 @@ import Landing from '../views/Landing/landing'
 
 const Router: FC = () => {
   return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Landing />} />
-                {/* <Route path="/contacto" element={<Contacto />} /> */}
-            </Routes>
-        </BrowserRouter>
+          <BrowserRouter>
+               <Routes>
+                    <Route path="/" element={<Landing />} />
+                    {/* <Route path="/contacto" element={<Contacto />} /> */}
+               </Routes>
+          </BrowserRouter>
   )
 }
 
