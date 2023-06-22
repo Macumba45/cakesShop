@@ -1,35 +1,30 @@
 module.exports = {
   env: {
-    browser: true,
-    es2021: true
+    browser: false,
+    es2021: true,
+    node: true,
   },
-  extends: ['standard-with-typescript', 'plugin:react/recommended'],
-  settings: {
-    react: {
-      version: 'detect'
-    }
-  },
-  overrides: [
-    {
-      env: {
-        node: true
-      },
-      files: ['*.ts', '*.tsx'],
-      parserOptions: {
-        sourceType: 'script'
-      }
-    }
-  ],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 2021,
     sourceType: 'module',
     project: './tsconfig.json'
   },
-  plugins: ['react'],
+  ignorePatterns: ['.eslintrc.js'],
+  plugins: ['react', '@typescript-eslint'],
   rules: {
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
-    'no-unused-vars': 'warn',
-    semi: 'off'
+    '@typescript-eslint/consistent-type-imports': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    'padded-blocks': 'off',
+    'no-multiple-empty-lines': ['error', { max: 1 }],
+    '@typescript-eslint/indent': ['error', 2],
+    'eol-last': ['error', 'always'],
+    '@typescript-eslint/quotes': ['error', 'single']
   }
-}
+};

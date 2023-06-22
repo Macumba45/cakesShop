@@ -18,7 +18,7 @@ const theme = {
   fonts: {
     montserrat: 'Montserrat, sans-serif',
     roboto: 'Roboto, sans-serif',
-    Amazon: "itc-officina-sans-std-bold', sans-serif",
+    Amazon: 'itc-officina-sans-std-bold\', sans-serif',
     display: 'Montserrat, sans-serif',
     body: 'Noto Sans, sans-serif',
     diseñadora: 'Proxima Nova'

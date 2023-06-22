@@ -1,7 +1,12 @@
 import { type FC, memo } from 'react'
+import Header from '../../componets/Header'
 
 const Landing: FC = () => {
-  return <div>GROWTHBOOSTER</div>
+  return (
+    <>
+      <Header></Header>
+    </>
+  )
 }
 
 export default memo(Landing)
