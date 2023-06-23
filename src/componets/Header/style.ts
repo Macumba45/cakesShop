@@ -3,12 +3,15 @@ import styled from 'styled-components'
 export const MainContainer = styled.header`
   display: flex;
   justify-content: center;
+  width: 100%;
+  overflow: hidden;
 `
 
 export const VideoContainer = styled.div`
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 
   ::before {
     content: '';
@@ -20,6 +23,17 @@ export const VideoContainer = styled.div`
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
+  @media screen and (max-width: 375px) {
+    height: 100vh;
+  }
+  @media screen and (max-width: 360px) {
+    height: 100vh;
+  }
+  @media screen and (max-width: 330px) {
+    height: 120vh;
+  }
+  
+
 `
 
 export const Video = styled.video`
@@ -39,7 +53,7 @@ export const TitleContainer = styled.div`
   margin-right: 1rem;
   margin-top: 10rem;
   @media screen and (max-width: 600px) {
-    margin-top: 15rem;
+    margin-top: 10rem;
   }
 `
 
@@ -64,10 +78,16 @@ export const ButtonContainer = styled.div`
   z-index: 444;
   margin-top: 35rem;
 
+  @media screen and (max-width: 880px) {
+    margin-top: 45rem;
+}
   @media screen and (max-width: 600px) {
     margin-top: 35rem;
     flex-direction: column;
   }
+
+ 
+  
 `
 
 export const Span = styled.span`
@@ -75,9 +95,13 @@ export const Span = styled.span`
   color: ${({ theme }) => theme.colors.azulClaro};
   font-size: 6rem;
   font-weight: 700;
+  @media screen and (max-width: 800px) {
+    font-size: 5rem;
+  }
   @media screen and (max-width: 600px) {
     font-size: 2rem;
   }
+  
 `
 
 export const SpanBold = styled.span`

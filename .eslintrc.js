@@ -35,6 +35,6 @@ module.exports = {
     '@typescript-eslint/indent': ['warn', 2],
     'eol-last': ['error', 'always'],
     '@typescript-eslint/quotes': ['error', 'single'],
-    'indent': 'off'
+    indent: 'off',
   },
 }
