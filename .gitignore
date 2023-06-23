@@ -54,6 +54,9 @@ web_modules/
 # Optional eslint cache
 .eslintcache
 
+# Optional husky
+.husky/
+
 # Optional stylelint cache
 .stylelintcache
 
