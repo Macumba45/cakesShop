@@ -4,15 +4,19 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 2021,
     sourceType: 'module',
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
   ignorePatterns: ['.eslintrc.js'],
   plugins: ['react', '@typescript-eslint'],
@@ -25,6 +29,6 @@ module.exports = {
     'no-multiple-empty-lines': ['error', { max: 1 }],
     '@typescript-eslint/indent': ['error', 2],
     'eol-last': ['error', 'always'],
-    '@typescript-eslint/quotes': ['error', 'single']
-  }
-};
+    '@typescript-eslint/quotes': ['error', 'single'],
+  },
+}

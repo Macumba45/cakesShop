@@ -1,18 +1,27 @@
 import { FC, memo } from 'react'
-import { Container, Content } from './style'
-const videoHeader = require('../../assets/video.mp4')
+import {
+  VideoContainer,
+  MainContainer,
+  Video,
+  TitleContainer,
+  TitleHeader,
+  Span,
+} from './style'
+const videoHeader = require('../../assets/video3.mp4')
 const Header: FC = () => {
-
   return (
-    <Container>
-      <Content
-        src={videoHeader}
-        autoPlay
-        muted
-        loop
-
-      />
-    </Container>
+    <>
+      <MainContainer>
+        <TitleContainer>
+          <TitleHeader>
+            La vida es incierta, <br /> <Span>Cómete el postre primero</Span>
+          </TitleHeader>
+        </TitleContainer>
+        <VideoContainer>
+          <Video src={videoHeader} autoPlay loop muted playsInline />
+        </VideoContainer>
+      </MainContainer>
+    </>
   )
 }
 
