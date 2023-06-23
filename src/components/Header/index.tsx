@@ -1,4 +1,4 @@
-import { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ButtonComp from '../Button'
 import CakeIcon from '@mui/icons-material/Cake'
@@ -14,10 +14,14 @@ import {
     Span,
     ButtonContainer,
 } from './style'
+import { CircularProgress } from '@mui/material'
+import { set } from 'lodash'
+import CircularStatic from '../LoaderWeb'
 const videoHeader = require('../../assets/video3.mp4')
 
 const Header: FC = () => {
     const navigate = useNavigate()
+    const [loading, setLoading] = useState(false)
     const iconStyle = {
         color: 'black',
         fontSize: '1.5rem',
@@ -25,11 +29,19 @@ const Header: FC = () => {
     }
 
     const goToProducts = useCallback(() => {
-        navigate('/productos')
+        const loader = document.querySelector('header') as HTMLElement
+        loader.style.display = 'none'
+        setLoading(true)
+        setTimeout(() => {
+            {
+                navigate('/productos')
+            }
+        }, 2000)
     }, [navigate])
 
     return (
         <>
+            {loading ? <CircularStatic /> : null}
             <MainContainer>
                 <VideoContainer>
                     <Video src={videoHeader} autoPlay loop muted playsInline />
