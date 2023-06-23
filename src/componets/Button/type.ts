@@ -8,6 +8,6 @@ export type Props = {
   style?: React.CSSProperties
   variant?: string
   color?: string
-  fontFamily?: string,
-  initial?: number,
+  fontFamily?: string
+  initial?: number
 }

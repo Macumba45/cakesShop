@@ -40,7 +40,6 @@ export const TitleContainer = styled.div`
   margin-top: 10rem;
   @media screen and (max-width: 600px) {
     margin-top: 15rem;
-
   }
 `
 
@@ -59,17 +58,16 @@ export const TitleHeader = styled.h1`
 `
 
 export const ButtonContainer = styled.div`
-    position: absolute;
-    display: flex;
-    align-items: center;
-    z-index: 444;
-    margin-top: 40rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 444;
+  margin-top: 35rem;
 
-
-    @media screen and (max-width: 600px) {
-        margin-top: 35rem;
-        flex-direction: column;
-    }
+  @media screen and (max-width: 600px) {
+    margin-top: 35rem;
+    flex-direction: column;
+  }
 `
 
 export const Span = styled.span`

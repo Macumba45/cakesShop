@@ -16,7 +16,7 @@ const ButtonComp: FC<Props> = ({
   variant,
   color,
   fontFamily,
-  initial
+  initial,
 }) => {
   const ButtonStyles = {
     backgroundColor: bgColor,
@@ -29,8 +29,7 @@ const ButtonComp: FC<Props> = ({
     width: '280px',
     cursor: 'pointer',
     opacity: 0,
-    fontFamily: fontFamily
-
+    fontFamily: fontFamily,
   }
 
   return (

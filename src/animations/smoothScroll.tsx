@@ -3,7 +3,7 @@ export function smoothScrollToNextSection() {
   console.log(currentSection)
 
   const nextSection =
-        currentSection?.nextElementSibling?.querySelector('.section')
+    currentSection?.nextElementSibling?.querySelector('.section')
   console.log(nextSection)
 
   if (nextSection && nextSection.nodeType === Node.ELEMENT_NODE) {

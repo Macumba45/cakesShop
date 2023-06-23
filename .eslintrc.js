@@ -27,8 +27,9 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     'padded-blocks': 'off',
     'no-multiple-empty-lines': ['error', { max: 1 }],
-    '@typescript-eslint/indent': ['error', 2],
+    '@typescript-eslint/indent': ['warn', 2],
     'eol-last': ['error', 'always'],
     '@typescript-eslint/quotes': ['error', 'single'],
+    'indent': 'off'
   },
 }

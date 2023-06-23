@@ -23,17 +23,16 @@ const Header: FC = () => {
           <ButtonComp
             href="https://calendly.com/agendagrowthboosters"
             title="Mis productos"
-            variant='contained'
-            bgColor='#FFB6C1'
-            initial={-  1000}
+            variant="contained"
+            bgColor="#FFB6C1"
+            initial={-1000}
           />
           <ButtonComp
             href="https://calendly.com/agendagrowthboosters"
             title="Mis recetas"
-            variant='outlined'
-            border='1px dashed #FFB6C1'
+            variant="outlined"
+            border="1px dashed #FFB6C1"
             initial={1000}
-
           />
         </ButtonContainer>
         <VideoContainer>
