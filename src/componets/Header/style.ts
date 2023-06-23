@@ -27,10 +27,10 @@ export const VideoContainer = styled.div`
     height: 100vh;
   }
   @media screen and (max-width: 360px) {
-    height: 100vh;
+    height: 110vh;
   }
   @media screen and (max-width: 330px) {
-    height: 120vh;
+    height: 140vh;
   }
   
 
@@ -80,6 +80,7 @@ export const ButtonContainer = styled.div`
 
   @media screen and (max-width: 880px) {
     margin-top: 45rem;
+    flex-direction: column;
 }
   @media screen and (max-width: 600px) {
     margin-top: 35rem;

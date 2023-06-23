@@ -17,6 +17,7 @@ const ButtonComp: FC<Props> = ({
   color,
   fontFamily,
   initial,
+  onClick,
 }) => {
   const ButtonStyles = {
     backgroundColor: bgColor || 'transparent',
@@ -48,6 +49,7 @@ const ButtonComp: FC<Props> = ({
             target="blank"
             style={style || ButtonStyles}
             href={href}
+            onClick={onClick}
             variant={variant as 'text' | 'outlined' | 'contained'} // Añadir el tipo correcto para la prop variant
             component={motion.a}
             animate={{ opacity: 1 }}

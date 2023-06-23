@@ -10,4 +10,5 @@ export type Props = {
   color?: string
   fontFamily?: string
   initial?: number
+  onClick?: () => void
 }

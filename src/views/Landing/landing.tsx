@@ -1,7 +1,7 @@
 import { type FC, memo } from 'react'
 import Header from '../../componets/Header'
 
-const Landing: FC = () => {
+const Home: FC = () => {
   return (
     <>
       <Header></Header>
@@ -9,4 +9,4 @@ const Landing: FC = () => {
   )
 }
 
-export default memo(Landing)
+export default memo(Home)

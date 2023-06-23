@@ -21,17 +21,40 @@ const Header: FC = () => {
         </TitleContainer>
         <ButtonContainer>
           <ButtonComp
-            href="https://calendly.com/agendagrowthboosters"
+            onClick={() => console.log('hola')}
             title="Mis productos"
             variant="contained"
             bgColor="#FFB6C1"
             initial={-1000}
+            color='black'
+
           />
           <ButtonComp
-            href="https://calendly.com/agendagrowthboosters"
+            onClick={() => console.log('hola')}
             title="Mis recetas"
             variant="outlined"
-            border="1px dashed #FFB6C1"
+            bgColor='#B0E0E6'
+            border="1px dashed #B0E0E6"
+            color='black'
+
+            initial={1000}
+          />
+          <ButtonComp
+            onClick={() => console.log('hola')}
+            title="Mi blog"
+            variant="outlined"
+            border="1px dashed #98FF98"
+            bgColor='#98FF98'
+            color='black'
+            initial={1000}
+          />
+          <ButtonComp
+            onClick={() => console.log('hola')}
+            color='black'
+            title="Otras cosas"
+            variant="outlined"
+            bgColor='#704241'
+            border="1px dashed #704241"
             initial={1000}
           />
         </ButtonContainer>
