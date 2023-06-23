@@ -9,9 +9,9 @@ function CircularProgressWithLabel(
     props: CircularProgressProps & { value: number }
 ) {
     return (
-        <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+        <Box sx={{ position: 'relative', display: 'inline-flex', width: '100%', justifyContent: 'center' }}>
             <CircularProgress
-                sx={{ color: '#FFB6C1' }}
+                sx={{ color: '#FFB6C1', width: '300px' }}
                 variant="determinate"
                 {...props}
             />
@@ -31,6 +31,7 @@ function CircularProgressWithLabel(
                     variant="caption"
                     component="div"
                     color="#FFB6C1"
+                    fontSize={20}
                 >{`${Math.round(props.value)}%`}</Typography>
             </Box>
         </Box>
@@ -62,7 +63,7 @@ export default function CircularStatic() {
                 height: '100vh',
             }}
         >
-            <CircularProgressWithLabel value={progress} />
+            <CircularProgressWithLabel style={{ width: '100px', height: '100px' }} value={progress} />
         </div>
     )
 }
