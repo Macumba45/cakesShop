@@ -1,6 +1,6 @@
 import { type FC, memo } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from '../views/Landing/home'
+import Home from '../views/Home/home'
 import Productos from '../views/Productos/productos'
 
 const Router: FC = () => {

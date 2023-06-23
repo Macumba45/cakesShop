@@ -31,6 +31,9 @@ const Header: FC = () => {
     return (
         <>
             <MainContainer>
+                <VideoContainer>
+                    <Video src={videoHeader} autoPlay loop muted playsInline />
+                </VideoContainer>
                 <TitleContainer>
                     <TitleHeader>
                         La vida es incierta, <br />{' '}
@@ -78,9 +81,6 @@ const Header: FC = () => {
                         icon={<LocalActivityIcon style={iconStyle} />}
                     />
                 </ButtonContainer>
-                <VideoContainer>
-                    <Video src={videoHeader} autoPlay loop muted playsInline />
-                </VideoContainer>
             </MainContainer>
         </>
     )
