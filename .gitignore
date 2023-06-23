@@ -41,6 +41,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+.husky/
+
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -53,9 +55,6 @@ web_modules/
 
 # Optional eslint cache
 .eslintcache
-
-# Optional husky
-.husky/
 
 # Optional stylelint cache
 .stylelintcache
