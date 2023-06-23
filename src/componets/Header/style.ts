@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const MainContainer = styled.header`
   display: flex;
   justify-content: center;
-  align-items: center;
 `
 
 export const VideoContainer = styled.div`
@@ -38,7 +37,10 @@ export const TitleContainer = styled.div`
   text-align: center;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-top: 10rem;
   @media screen and (max-width: 600px) {
+    margin-top: 15rem;
+
   }
 `
 
@@ -54,6 +56,20 @@ export const TitleHeader = styled.h1`
     font-size: 6rem;
     line-height: 5rem;
   }
+`
+
+export const ButtonContainer = styled.div`
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 444;
+    margin-top: 40rem;
+
+
+    @media screen and (max-width: 600px) {
+        margin-top: 35rem;
+        flex-direction: column;
+    }
 `
 
 export const Span = styled.span`
