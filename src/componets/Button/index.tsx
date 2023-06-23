@@ -19,12 +19,12 @@ const ButtonComp: FC<Props> = ({
   initial,
 }) => {
   const ButtonStyles = {
-    backgroundColor: bgColor,
+    backgroundColor: bgColor || 'transparent',
     color: color || '#F7F7F7',
     marginBottom: marginBottom || '1rem',
     marginLeft: '1rem',
     marginRight: '1rem',
-    border: border,
+    border: border || 'none',
     fontSize: '1rem',
     width: '280px',
     cursor: 'pointer',
