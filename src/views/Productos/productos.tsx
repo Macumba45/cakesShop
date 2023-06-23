@@ -3,17 +3,15 @@ import RecipeReviewCard from '../../components/CardProductos'
 import { MainContainer } from './styles'
 
 const Productos: FC = () => {
-  return (
-
-    <MainContainer>
-      <RecipeReviewCard />
-      <RecipeReviewCard />
-      <RecipeReviewCard />
-      <RecipeReviewCard />
-      <RecipeReviewCard />
-
-    </MainContainer>
-  )
+    return (
+        <MainContainer>
+            <RecipeReviewCard />
+            <RecipeReviewCard />
+            <RecipeReviewCard />
+            <RecipeReviewCard />
+            <RecipeReviewCard />
+        </MainContainer>
+    )
 }
 
 export default memo(Productos)
