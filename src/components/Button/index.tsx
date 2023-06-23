@@ -59,8 +59,8 @@ const ButtonComp: FC<Props> = ({
               ease: [0.43, 0.13, 0.23, 0.96],
             }} // transición lenta
           >
-            {title}
             {icon}
+            {title}
           </Button>
         </motion.div>
       </MainContainer>

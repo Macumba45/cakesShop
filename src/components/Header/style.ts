@@ -32,8 +32,6 @@ export const VideoContainer = styled.div`
   @media screen and (max-width: 330px) {
     height: 140vh;
   }
-  
-
 `
 
 export const Video = styled.video`
@@ -81,14 +79,11 @@ export const ButtonContainer = styled.div`
   @media screen and (max-width: 880px) {
     margin-top: 45rem;
     flex-direction: column;
-}
+  }
   @media screen and (max-width: 600px) {
     margin-top: 35rem;
     flex-direction: column;
   }
-
- 
-  
 `
 
 export const Span = styled.span`
@@ -102,7 +97,6 @@ export const Span = styled.span`
   @media screen and (max-width: 600px) {
     font-size: 2rem;
   }
-  
 `
 
 export const SpanBold = styled.span`

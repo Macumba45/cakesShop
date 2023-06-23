@@ -1,5 +1,5 @@
 import { type FC, memo } from 'react'
-import Header from '../../componets/Header'
+import Header from '../../components/Header'
 
 const Home: FC = () => {
   return (
