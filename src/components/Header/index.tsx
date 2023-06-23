@@ -5,6 +5,7 @@ import CakeIcon from '@mui/icons-material/Cake'
 import ReceiptLongIcon from '@mui/icons-material/ReceiptLong'
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo'
 import LocalActivityIcon from '@mui/icons-material/LocalActivity'
+import CircularStatic from '../LoaderWeb'
 import {
     VideoContainer,
     MainContainer,
@@ -14,9 +15,6 @@ import {
     Span,
     ButtonContainer,
 } from './style'
-import { CircularProgress } from '@mui/material'
-import { set } from 'lodash'
-import CircularStatic from '../LoaderWeb'
 const videoHeader = require('../../assets/video3.mp4')
 
 const Header: FC = () => {
